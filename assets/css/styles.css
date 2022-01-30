@@ -101,13 +101,14 @@ img {
   height: auto;
 }
 
-/* body.dark-theme {
-  --first-color-dark: hsl(var(--hue), 8%, 20%);
-  --title-color: hsl(var(--hue), 4%, 95%);
-  --text-color: hsl(var(--hue), 4%, 75%);
-  --body-color: hsl(var(--hue), 8%, 12%);
-  --container-color: hsl(var(--hue), 8%, 16%);
-} */
+body.dark-theme {
+  --title-color: rgb(242, 242, 243);
+  --text-color: rgb(205, 205, 214);
+  --first-color-lighten: rgb(60, 65, 75);
+  --body-color: rgb(28, 28, 33);
+  --container-color: rgb(31, 32, 37);
+  --shadow: 0 2px 8px rgba(22, 30, 41, 0.25);
+}
 
 .section {
   padding: 8rem 0 2rem 0;
@@ -199,6 +200,8 @@ img {
   width: 35px;
   height: 35px;
   font-size: 1.15rem;
+  transition: .3s;
+  cursor: pointer;
 }
 
 .icon__button-icon {
@@ -249,10 +252,10 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--container-color);
+  background-color: var(--body-color);
   height: calc(var(--header-height) + 1.5rem);
   z-index: var(--z-fixed);
-  transition: .3s;
+  transition: .4s;
 }
 
 .nav {
@@ -339,17 +342,23 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 0;
   background-color: var(--container-color);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
+  width: 200px;
   cursor: default;
+  transition: .4s;
 }
 
 .about__skill__card-icon {
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--first-color-lighten);
   transition: .3s;
+}
+
+body.dark-theme .about__skill__card-icon {
+  color: var(--first-color);
 }
 
 .about__card__title {
@@ -391,6 +400,7 @@ img {
   width: 475px;
   position: relative;
   overflow: hidden;
+  transition: .4s;
 }
 
 .skill__card__title {
@@ -452,6 +462,7 @@ img {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: var(--gap);
+  transition: .4s;
 }
 
 .project-reverse {
@@ -462,67 +473,25 @@ img {
   flex: 0.4;
   height: 250px;
   border-radius: var(--border-radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .project__media-project1 {
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(../images/python-project-thumb-1.png)
-  ;
+  background-image: url(../images/python-project-thumb-1.png);
 }
 
 .project__media-project2 {
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(../images/python-project-thumb-2.png)
-  ;
+  background-image: url(../images/python-project-thumb-2.png);
 }
 
 .project__media-project3 {
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(../images/rn-project-thumb-3.png)
-  ;
+  background-image: url(../images/rn-project-thumb-3.png);
 }
 
 .project__media-project4 {
-  background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-    url(../images/python-project-thumb-1.png)
-  ;
-}
-
-.project__media-circle {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 2px solid transparent;
-  transition: .3s;
-}
-
-.project__media-icon {
-  font-size: 1.5rem;
-  transition: .3s;
-  color: var(--first-color-light);
-}
-
-.project__media:hover .project__media-circle {
-  border-color: var(--first-color);
-}
-
-.project__media:hover .project__media-icon {
-  color: var(--first-color);
+  background-image: url(../images/via-notes-project-thumb.png);
 }
 
 .project__data {
@@ -535,6 +504,12 @@ img {
 
 .project__title {
   margin-bottom: .5rem;
+}
+
+.project__links {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
 }
 
 /* --------------- CONTACTS --------------- */
@@ -554,6 +529,7 @@ img {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  transition: .4s;
 }
 
 .contact__card-icon {
@@ -596,6 +572,7 @@ img {
   flex-direction: column;
   align-items: center;
   background-color: var(--first-color-lighten);
+  transition: .4s;
 }
 
 .footer__row {
@@ -632,4 +609,9 @@ img {
 .footer__copy {
   margin-top: 4rem;
   font-size: var(--smaller-font-size);
+}
+
+body.dark-theme .footer__link,
+body.dark-theme .social__link {
+  color: var(--first-color);
 }
