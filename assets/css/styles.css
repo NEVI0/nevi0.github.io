@@ -110,7 +110,7 @@ img {
 } */
 
 .section {
-  padding-top: 8rem;
+  padding: 8rem 0 2rem 0;
 }
 
 .section__titles {
@@ -210,43 +210,6 @@ img {
   color: var(--first-color);
 }
 
-/* --------------- INPUT --------------- */
-.input {
-  display: flex;
-  flex-direction: column-reverse;
-  width: 100%;
-  row-gap: .5rem;
-}
-
-.input__field {
-  outline: none;
-  border: 1px solid rgb(246, 246, 248);
-  background-color: rgb(246, 246, 248);
-  border-radius: var(--border-radius);
-  padding: 1rem 1.25rem;
-  transition: .3s;
-}
-
-.input__field-textarea {
-  resize: none;
-  height: 250px;
-}
-
-.input__label {
-  font-weight: var(--font-medium);
-  transition: .3s;
-}
-
-.input__field:hover,
-.input__field:focus {
-  border-color: var(--first-color-light);
-}
-
-.input__field:hover + .input__label,
-.input__field:focus + .input__label {
-  color: var(--first-color-light);
-}
-
 /* --------------- SCROLLUP --------------- */
 .scrollup {
   position: fixed;
@@ -268,6 +231,7 @@ img {
   width: 100%;
   background-color: var(--container-color);
   height: calc(var(--header-height) + 1.5rem);
+  z-index: var(--z-fixed);
   transition: .3s;
 }
 
@@ -542,65 +506,70 @@ img {
 
 /* --------------- CONTACTS --------------- */
 .contact__container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  column-gap: var(--gap);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap);
 }
 
-.contact__data {
+.contact__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: var(--gap);
-  width: 400px;
-}
-
-.contact__social {
-  display: flex;
-  flex-direction: column;
-  row-gap: .75rem;
-}
-
-.social__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
+  padding: 4rem var(--gap);
   background-color: var(--container-color);
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   cursor: pointer;
-  width: 250px;
+  position: relative;
+  overflow: hidden;
 }
 
-.social__card-icon {
+.contact__card-icon {
   font-size: 1.5rem;
   color: var(--first-color-light);
   transition: .3s;
 }
 
-.social__card__title {
+.contact__title {
   margin: 1rem 0 .2rem 0;
   font-size: var(--h3-font-size);
 }
 
-.social__card__data {
+.contact__data {
   font-size: 1rem;
   color: var(--text-color-light);
 }
 
-.social__card:hover .social__card-icon {
+.contact__card:hover .contact__card-icon {
   transform: translateY(-.25rem);
 }
 
-.contact__form {
-  /* border: 1px solid red; */
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: .75rem;
+.contact__card-overflow {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  transform: rotate(-45deg);
+  background-color: var(--first-color-lighten);
+  transition: .4s;
+}
+
+.overflow-1 {
+  top: -100px;
+  left: -150px;
+}
+
+.overflow-2 {
+  bottom: -100px;
+  right: -150px;
+}
+
+.contact__card:hover .contact__card-overflow.overflow-1 {
+  top: -30px;
+  left: -80px;
+}
+
+.contact__card:hover .contact__card-overflow.overflow-2 {
+  bottom: -30px;
+  right: -80px;
 }
 
 /* --------------- FOOTER --------------- */
