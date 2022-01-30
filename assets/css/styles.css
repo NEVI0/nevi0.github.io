@@ -469,33 +469,13 @@ body.dark-theme .about__skill__card-icon {
   flex-direction: row-reverse;
 }
 
-.project__media {
-  flex: 0.4;
+.project__image {
+  width: 400px;
   height: 250px;
   border-radius: var(--border-radius);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.project__media-project1 {
-  background-image: url(../images/python-project-thumb-1.png);
-}
-
-.project__media-project2 {
-  background-image: url(../images/python-project-thumb-2.png);
-}
-
-.project__media-project3 {
-  background-image: url(../images/rn-project-thumb-3.png);
-}
-
-.project__media-project4 {
-  background-image: url(../images/via-notes-project-thumb.png);
 }
 
 .project__data {
-  flex: 0.6;
   height: 250px;
   display: flex;
   flex-direction: column;
@@ -575,6 +555,10 @@ body.dark-theme .about__skill__card-icon {
   transition: .4s;
 }
 
+.footer__title {
+  text-align: center;
+}
+
 .footer__row {
   display: flex;
   align-items: center;
@@ -614,4 +598,57 @@ body.dark-theme .about__skill__card-icon {
 body.dark-theme .footer__link,
 body.dark-theme .social__link {
   color: var(--first-color);
+}
+
+/* --------------- BREAKPOINTS --------------- */
+@media screen and (max-width: 400px) {
+  .container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .scrollup {
+    bottom: 2rem;
+    right: 1rem;
+  }
+  
+  .show-scroll {
+    bottom: -2rem;
+  }
+
+  .skills__container {
+    flex-direction: column;
+    row-gap: var(--gap);
+  }
+  
+  .skill__card {
+    padding: 2.5rem 0;
+    width: 100%;
+  }
+
+  .project {
+    flex-direction: column;
+    row-gap: var(--gap);
+  }
+  
+  .project-reverse {
+    flex-direction: column;
+  }
+
+  .project__image {
+    width: 100%;
+    height: 150px;
+    border-radius: var(--border-radius);
+  }
+
+  .contact__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact__card {
+    padding: 2rem 0;
+    transition: .4s;
+  }
+}
+@media screen and (min-width: 576px) {
 }
