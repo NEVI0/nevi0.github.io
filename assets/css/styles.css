@@ -3,14 +3,14 @@
 :root {
   --header-height: 3.5rem;
 
-  --first-color: rgb(105, 58, 233);
-  --first-color-alt: rgb(82, 40, 197);
-  --first-color-light: rgb(155, 126, 236);
-  --first-color-lighten: rgb(202, 186, 247);
+  --first-color: rgb(28, 100, 209);
+  --first-color-alt: rgb(16, 71, 153);
+  --first-color-light: rgb(32, 87, 170);
+  --first-color-lighten: rgb(195, 216, 248);
 
   --title-color: rgb(40, 38, 43);
   --text-color: rgb(25, 24, 27);
-  --text-color-light: rgb(207, 202, 218);
+  --text-color-light: rgb(217, 225, 235);
 
   --body-color: rgb(255, 255, 255);
   --container-color: rgb(255, 255, 255);
@@ -223,6 +223,26 @@ img {
   bottom: -5rem;
 }
 
+/* --------------- CARD OVERFLOW --------------- */
+.card-overflow {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  transform: rotate(-45deg);
+  background-color: var(--first-color-lighten);
+  transition: .4s;
+}
+
+.overflow-1 {
+  top: -100px;
+  left: -150px;
+}
+
+.overflow-2 {
+  bottom: -100px;
+  right: -150px;
+}
+
 /* --------------- HEADER --------------- */
 .header {
   position: fixed;
@@ -328,7 +348,7 @@ img {
 
 .about__skill__card-icon {
   font-size: 1.5rem;
-  color: var(--first-color-light);
+  color: var(--first-color);
   transition: .3s;
 }
 
@@ -363,17 +383,18 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: var(--gap);
+  row-gap: 2.5rem;
+  border-radius: var(--border-radius);
   background-color: var(--container-color);
   box-shadow: var(--shadow);
-  border-radius: var(--border-radius);
-  padding: var(--gap) 0;
-  box-shadow: var(--shadow);
+  padding: 2.5rem 0;
   width: 475px;
+  position: relative;
+  overflow: hidden;
 }
 
 .skill__card__title {
-  color: var(--first-color-light);
+  color: var(--first-color);
   font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
 }
@@ -392,7 +413,7 @@ img {
 
 .skill__icon {
   font-size: 1.35rem;
-  color: var(--first-color-light);
+  color: var(--first-color);
 }
 
 .skill__name {
@@ -402,6 +423,18 @@ img {
 .skill__level {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
+}
+
+.skill__card:hover .overflow-1,
+.skill__card:focus .overflow-1 {
+  top: -30px;
+  left: -80px;
+}
+
+.skill__card:hover .overflow-2,
+.skill__card:focus .overflow-2 {
+  bottom: -30px;
+  right: -80px;
 }
 
 /* --------------- PROJECTS --------------- */
@@ -525,7 +558,7 @@ img {
 
 .contact__card-icon {
   font-size: 1.5rem;
-  color: var(--first-color-light);
+  color: var(--first-color);
   transition: .3s;
 }
 
@@ -543,31 +576,14 @@ img {
   transform: translateY(-.25rem);
 }
 
-.contact__card-overflow {
-  position: absolute;
-  width: 200px;
-  height: 100px;
-  transform: rotate(-45deg);
-  background-color: var(--first-color-lighten);
-  transition: .4s;
-}
-
-.overflow-1 {
-  top: -100px;
-  left: -150px;
-}
-
-.overflow-2 {
-  bottom: -100px;
-  right: -150px;
-}
-
-.contact__card:hover .contact__card-overflow.overflow-1 {
+.contact__card:hover .overflow-1,
+.contact__card:focus .overflow-1 {
   top: -30px;
   left: -80px;
 }
 
-.contact__card:hover .contact__card-overflow.overflow-2 {
+.contact__card:hover .overflow-2,
+.contact__card:focus .overflow-2 {
   bottom: -30px;
   right: -80px;
 }
