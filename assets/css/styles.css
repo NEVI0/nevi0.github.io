@@ -601,7 +601,7 @@ body.dark-theme .social__link {
 }
 
 /* --------------- BREAKPOINTS --------------- */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 580px) {
   .container{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -718,5 +718,12 @@ body.dark-theme .social__link {
   .contact__card:focus .overflow-2 {
     bottom: -50px;
     right: -120px;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  .container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
