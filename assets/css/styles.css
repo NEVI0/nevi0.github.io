@@ -616,6 +616,52 @@ body.dark-theme .social__link {
     bottom: -2rem;
   }
 
+  .home__container {
+    padding: 8rem 0;
+    gap: var(--gap);
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+  
+  .home__data {
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .home__title {
+    font-size: var(--h1-font-size);
+    text-align: center;
+  }
+
+  .home__description {
+    text-align: center;
+  }
+
+  .home__image {
+    justify-self: center;
+  }
+  
+  .home__image:hover {
+    box-shadow: var(--first-color-lighten) 25px 25px;
+  }
+
+  .about__skills {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--gap);
+  }
+
+  .about__skill__card {
+    padding: 1rem .5rem;
+    width: 150px;
+  }
+
+  .about__description {
+    text-align: center;
+    margin: var(--gap);
+  }
+
   .skills__container {
     flex-direction: column;
     row-gap: var(--gap);
@@ -624,6 +670,18 @@ body.dark-theme .social__link {
   .skill__card {
     padding: 2.5rem 0;
     width: 100%;
+  }
+
+  .skill__card:hover .overflow-1,
+  .skill__card:focus .overflow-1 {
+    top: -40px;
+    left: -110px;
+  }
+
+  .skill__card:hover .overflow-2,
+  .skill__card:focus .overflow-2 {
+    bottom: -40px;
+    right: -110px;
   }
 
   .project {
@@ -649,6 +707,16 @@ body.dark-theme .social__link {
     padding: 2rem 0;
     transition: .4s;
   }
-}
-@media screen and (min-width: 576px) {
+
+  .contact__card:hover .overflow-1,
+  .contact__card:focus .overflow-1 {
+    top: -50px;
+    left: -120px;
+  }
+
+  .contact__card:hover .overflow-2,
+  .contact__card:focus .overflow-2 {
+    bottom: -50px;
+    right: -120px;
+  }
 }
