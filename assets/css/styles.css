@@ -476,7 +476,7 @@ body.dark-theme .about__skill__card-icon {
 }
 
 .project__data {
-  height: 250px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -601,7 +601,7 @@ body.dark-theme .social__link {
 }
 
 /* --------------- BREAKPOINTS --------------- */
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 457px) {
   .container{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -699,6 +699,14 @@ body.dark-theme .social__link {
     border-radius: var(--border-radius);
   }
 
+  .project__data {
+    height: auto;
+  }
+
+  .project__links {
+    margin-top: var(--gap);
+  }
+
   .contact__container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -721,7 +729,7 @@ body.dark-theme .social__link {
   }
 }
 
-@media screen and (max-width: 969px) {
+@media screen and (max-width: 976px) {
   .container{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
