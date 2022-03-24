@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Névio's Portfolio</title>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,106 +8,175 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" href="./assets/images/person.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>Névio Costa Magagnin | Full-stack developer</title>
 </head>
 <body class="light-theme">
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <img
-                    src="./assets/images/person.png"
-                    alt="logo"
-                    class="nav__logo-image"
-                />
-
-                Névio's Portfolio
+                Névio Costa Magagnin
             </a>
 
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experiences" class="nav__link">Experiences</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
             <div class="nav__buttons">
-                <a download="" href="./assets/pdf/nevio-cv.pdf" class="icon__button">
-                    <i class="ri-file-user-line icon__button-icon"></i>
-                </a>
-    
-                <a class="icon__button" id="change-theme">
-                    <i class="ri-moon-line icon__button-icon" id="change-theme-icon"></i>
-                </a>
+                <!-- <i class="bx bx-moon change-theme" id="theme-button"></i> -->
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
             </div>
         </nav>
     </header>
 
     <main class="main">
         <section class="home" id="home">
-            <div class="home__container container grid">
+            <div class="home__container container">
                 <div class="home__data">
                     <h1 class="home__title">
-                        Névio Costa Magagnin <br> Full-stack developer!
+                        Hi, nice to meet you, I'm <br> a full-stack developer
                     </h1>
 
                     <p class="home__description">
-                        Nice to meet you, I am Névio, full-stack developer, let's learn more about me?
+                        Welcome to my web portfolio, let's learn more about me?
                     </p>
 
-                    <a href="#about" class="button">
-                        Get started
-                        <i class="ri-arrow-right-line button-icon"></i>
-                    </a>
+                    <div class="home__buttons">
+                        <a href="#" class="button">
+                            Download CV
+                        </a>
+
+                        <a href="#" class="button button-outline">
+                            Learn more
+                        </a>
+                    </div>
                 </div>
 
-                <img
-                    src="./assets/images/nevio.png"
-                    alt="nevio"
-                    class="home__image"
-                />
+                <div class="home__image__box">
+                    <div class="image__detail image__detail-1"></div>
+
+                    <img 
+                        src="./assets/images/nevio.png" 
+                        alt="banner" 
+                        class="home__image"
+                    >
+
+                    <div class="image__detail image__detail-2"></div>
+                </div>
             </div>
         </section>
 
         <section class="about section container" id="about">
-            <div class="section__titles">
+            <div class="section__header">
                 <h3 class="section__subtitle">My intro</h3>
-                <h2 class="section__title">About Me</h2>
+                <h2 class="section__title">About me</h2>
             </div>
 
             <div class="about__container">
-                <div class="about__skills">
-                    <div class="about__skill__card">
-                        <i class="ri-star-line about__skill__card-icon"></i>
-                        <h3 class="about__card__title">Experience</h3>
-                        <span class="about__card__data">2 + years</span>
-                    </div>
-
-                    <div class="about__skill__card">
-                        <i class="ri-computer-line about__skill__card-icon"></i>
-                        <h3 class="about__card__title">Projects</h3>
-                        <span class="about__card__data">10 + projects</span>
-                    </div>
-
-                    <div class="about__skill__card">
-                        <i class="ri-book-mark-line about__skill__card-icon"></i>
-                        <h3 class="about__card__title">Courses</h3>
-                        <span class="about__card__data">10 + courses</span>
-                    </div>
-                </div>
-
                 <p class="about__description">
-                    Full-stack developer, I create websites, web apps, mobile apps, API's and with Figma I create UI's to the projects that I work with. I do not have an university degree, all the knowleage that I know came from online courses such as Udemy, Youtube, Articles and others.
+                    Nullam ut purus viverra, pellentesque est nec, commodo quam. Nunc tristique at odio a bibendum. Nunc pulvinar lacus eu nibh maximus, ut consectetur nulla pellentesque. Phasellus maximus leo vitae arcu placerat, nec porta lectus auctor. In id lobortis dui, nec congue leo. Pellentesque suscipit tincidunt nisi sit amet malesuada. Nulla at venenatis quam. Pellentesque finibus hendrerit tristique.
                 </p>
 
-                <a href="#contact" class="button">
+                <a href="#" class="button">
                     Contact me
-                    <i class="ri-mail-send-line button-icon"></i>
                 </a>
             </div>
         </section>
 
+        <section class="experiences section container" id="experiences">
+            <div class="section__header">
+                <h3 class="section__subtitle">My walk</h3>
+                <h2 class="section__title">Experiences</h2>
+            </div>
+
+            <div class="experiences__container">
+                <!-- <div class="experiences__list">
+                    <div class="experience__item">
+                        <p class="experience__period">
+                            since feb/2020 until dec/2020
+                        </p>
+
+                        <h3 class="experience__title">
+                            Intern at Bruning Sistemas Ltda.
+                        </h3>
+
+                        <div class="experience__divider"></div>
+
+                        <p class="experience__description">
+                            Nullam ut purus viverra, pellentesque est nec, commodo quam. Nunc tristique at odio a bibendum. Nunc pulvinar lacus eu nibh maximus, ut consectetur nulla pellentesque.
+                        </p>
+                    </div>
+
+                    <div class="experience__item">
+                        <p class="experience__period">
+                            since jan/2021 until jun/2021
+                        </p>
+
+                        <h3 class="experience__title">
+                            Full-stack developer at Bruning Sistemas Ltda.
+                        </h3>
+
+                        <div class="experience__divider"></div>
+
+                        <p class="experience__description">
+                            Nullam ut purus viverra, pellentesque est nec, commodo quam. Nunc tristique at odio a bibendum. Nunc pulvinar lacus eu nibh maximus, ut consectetur nulla pellentesque.
+                        </p>
+                    </div>
+
+                    <div class="experience__item">
+                        <p class="experience__period">
+                            since jun/2021 until now
+                        </p>
+
+                        <h3 class="experience__title">
+                            Front-end developer at Vialaser Depilação S.A
+                        </h3>
+
+                        <div class="experience__divider"></div>
+
+                        <p class="experience__description">
+                            Nullam ut purus viverra, pellentesque est nec, commodo quam. Nunc tristique at odio a bibendum. Nunc pulvinar lacus eu nibh maximus, ut consectetur nulla pellentesque.
+                        </p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
         <section class="skills section container" id="skills">
-            <div class="section__titles">
+            <div class="section__header">
                 <h3 class="section__subtitle">My abilities</h3>
                 <h2 class="section__title">Skills</h2>
             </div>
 
             <div class="skills__container">
                 <div class="skill__card">
-                    <div class="card-overflow overflow-1"></div>
-
                     <div class="skill__card__title">Back-end</div>
 
                     <div class="skill__card__abilities">
@@ -185,13 +252,9 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="card-overflow overflow-2"></div>
                 </div>
 
                 <div class="skill__card">
-                    <div class="card-overflow overflow-1"></div>
-
                     <div class="skill__card__title">Front-end</div>
 
                     <div class="skill__card__abilities">
@@ -267,13 +330,22 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="card-overflow overflow-2"></div>
                 </div>
             </div>
         </section>
 
         <section class="projects section container" id="projects">
+            <div class="section__header">
+                <h3 class="section__subtitle">More about me</h3>
+                <h2 class="section__title">Projects</h2>
+            </div>
+
+            <div class="projects__container">
+
+            </div>
+        </section>
+
+        <!-- <section class="projects section container" id="projects">
             <div class="section__titles">
                 <h3 class="section__subtitle">More experience</h3>
                 <h2 class="section__title">Projects</h2>
@@ -437,10 +509,17 @@
                     <div class="card-overflow overflow-2"></div>
                 </a>
             </div>
-        </section>
+        </section> -->
     </main>
 
-    <button class="icon__button scrollup" id="scroll-up">
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+
+    <!-- <button class="icon__button scrollup" id="scroll-up">
         <i class="ri-arrow-up-line icon__button-icon"></i>
     </button>
 
@@ -476,8 +555,43 @@
         <p class="footer__copy">
             &copy; Névio Costa Magagnin. All rights reserved
         </p>
-    </footer>
+    </footer> -->
     
+    <footer class="footer">
+        <h1 class="footer__title">
+            Névio C. Magagnin
+        </h1>
+
+        <div class="footer__links footer__row">
+            <a href="#about" class="footer__link">About</a>
+            <a href="#experiences" class="footer__link">Experiences</a>
+            <a href="#skills" class="footer__link">Skills</a>
+            <a href="#projects" class="footer__link">Projects</a>
+        </div>
+
+        <div class="footer__social footer__row">
+            <a href="mailto:neviocostamagagnin@gmail.com" target="_blank" class="social__link">
+                <i class="ri-mail-send-line social__icon"></i>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=5548996388761" target="_blank" class="social__link">
+                <i class="ri-whatsapp-line social__icon"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/n%C3%A9vio-magagnin-045710177/" target="_blank" class="social__link">
+                <i class="ri-linkedin-box-line social__icon"></i>
+            </a>
+
+            <a href="https://www.instagram.com/nevio_costa/" target="_blank" class="social__link">
+                <i class="ri-instagram-line social__icon"></i>
+            </a>
+        </div>
+
+        <p class="footer__copy">
+            &copy; Névio Costa Magagnin. All rights reserved
+        </p>
+    </footer>
+
     <script src="./assets/js/scrollreveal.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
