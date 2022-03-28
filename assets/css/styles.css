@@ -49,7 +49,6 @@
 }
 
 /* ------------ DEFAULTS ------------ */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -141,7 +140,6 @@ button {
 }
 
 /* ------------ BUTTON ------------ */
-
 .button {
   color: #fff;
   display: inline-block;
@@ -164,7 +162,6 @@ button {
 }
 
 /* ------------ HEADER ------------ */
-
 .header {
   width: 100%;
   background-color: var(--body-color);
@@ -260,7 +257,6 @@ button {
 }
 
 /* ------------ HOME ------------ */
-
 .home__container {
   padding-top: 1.5rem;
   row-gap: 1.5rem;
@@ -322,7 +318,6 @@ button {
 }
 
 /* ------------ ABOUT ------------ */
-
 .about__container {
   display: flex;
   flex-direction: column;
@@ -336,7 +331,6 @@ button {
 }
 
 /* ------------ EXPERIENCES ------------ */
-
 .experiences__container {
   display: flex;
   align-items: center;
