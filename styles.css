@@ -1,0 +1,136 @@
+:root {
+    --body-color: #D6F6E1;
+    --container-color: #9D9D9D;
+    --text-color: #040905;
+    --text-light-color: #727272
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--body-color);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 2rem;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.header__image {
+    width: 132px;
+    border-radius: 100%;
+    border: 3px solid var(--text-color);
+}
+
+.header__data {
+    text-align: center;
+}
+
+.header__title {
+    font-size: 1.5rem;
+}
+
+.header__subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light-color);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.divider__line {
+    height: 1px;
+    width: 70px;
+    background-color: var(--container-color);
+    border-radius: 5px;
+}
+
+.divider__title {
+    font-size: .75rem;
+    color: var(--container-color);
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 1rem;
+}
+
+.link {
+    padding: 1rem 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-color);
+    border: 3px solid var(--text-color);
+    box-shadow: 5px 5px 0 var(--text-color);
+    transition: .3s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.link:hover, .link:focus {
+    box-shadow: 6px 6px 0 var(--text-color);
+}
+
+.link-instagram {
+    background-color: #f00d59;    
+}
+
+.link-linkedin {
+    background-color: #1eaaf5;    
+}
+
+.link-whatsapp {
+    background-color: #13f129;    
+}
+
+.link-email {
+    background-color: #fc9015;
+}
+
+.link-github {
+    background-color: #ed0df5;    
+}
+
+.link-figma {
+    background-color: #f0ec1e;    
+}
+
+.link-meetcompass {
+    background-color: #5926f2;    
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.copyright {
+    font-size: .75rem;
+    color: var(--container-color);
+}

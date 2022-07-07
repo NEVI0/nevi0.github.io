@@ -1,484 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Névio's Portfolio</title>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="shortcut icon" href="./assets/images/person.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Névio Costa Magagnin</title>
 </head>
-<body class="light-theme">
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">
-                <img
-                    src="./assets/images/person.png"
-                    alt="logo"
-                    class="nav__logo-image"
-                />
+<body>
+    <div class="main">
+        <header class="header">
+            <img
+                src="./images/me.jpg"
+                alt="Névio image"
+                class="header__image"
+            />
 
-                Névio's Portfolio
-            </a>
+            <div class="header__data">
+                <h1 class="header__title">
+                    Névio C. Magagnin
+                </h1>
 
-            <div class="nav__buttons">
-                <a download="" href="./assets/pdf/nevio-cv.pdf" class="icon__button">
-                    <i class="ri-file-user-line icon__button-icon"></i>
-                </a>
-    
-                <a class="icon__button" id="change-theme">
-                    <i class="ri-moon-line icon__button-icon" id="change-theme-icon"></i>
-                </a>
+                <h2 class="header__subtitle">
+                    Front-end Developer & UI Design
+                </h2>
             </div>
-        </nav>
-    </header>
-
-    <main class="main">
-        <section class="home" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <h1 class="home__title">
-                        Névio Costa Magagnin <br> Full-stack developer!
-                    </h1>
-
-                    <p class="home__description">
-                        Nice to meet you, I am Névio, full-stack developer, let's learn more about me?
-                    </p>
-
-                    <a href="#about" class="button">
-                        Get started
-                        <i class="ri-arrow-right-line button-icon"></i>
-                    </a>
-                </div>
-
-                <img
-                    src="./assets/images/nevio.png"
-                    alt="nevio"
-                    class="home__image"
-                />
-            </div>
-        </section>
-
-        <section class="about section container" id="about">
-            <div class="section__titles">
-                <h3 class="section__subtitle">My intro</h3>
-                <h2 class="section__title">About Me</h2>
-            </div>
-
-            <div class="about__container">
-                <div class="about__skills">
-                    <div class="about__skill__card">
-                        <i class="ri-star-line about__skill__card-icon"></i>
-                        <h3 class="about__card__title">Experience</h3>
-                        <span class="about__card__data">2 + years</span>
-                    </div>
-
-                    <div class="about__skill__card">
-                        <i class="ri-computer-line about__skill__card-icon"></i>
-                        <h3 class="about__card__title">Projects</h3>
-                        <span class="about__card__data">10 + projects</span>
-                    </div>
-
-                    <div class="about__skill__card">
-                        <i class="ri-book-mark-line about__skill__card-icon"></i>
-                        <h3 class="about__card__title">Courses</h3>
-                        <span class="about__card__data">10 + courses</span>
-                    </div>
-                </div>
-
-                <p class="about__description">
-                    Full-stack developer, I create websites, web apps, mobile apps, API's and with Figma I create UI's to the projects that I work with. I do not have an university degree, all the knowleage that I know came from online courses such as Udemy, Youtube, Articles and others.
-                </p>
-
-                <a href="#contact" class="button">
-                    Contact me
-                    <i class="ri-mail-send-line button-icon"></i>
-                </a>
-            </div>
-        </section>
-
-        <section class="skills section container" id="skills">
-            <div class="section__titles">
-                <h3 class="section__subtitle">My abilities</h3>
-                <h2 class="section__title">Skills</h2>
-            </div>
-
-            <div class="skills__container">
-                <div class="skill__card">
-                    <div class="card-overflow overflow-1"></div>
-
-                    <div class="skill__card__title">Back-end</div>
-
-                    <div class="skill__card__abilities">
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">Node Js</h3>
-                                <span class="skill__level">Advanced</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">Python</h3>
-                                <span class="skill__level">Medium</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">MySQL</h3>
-                                <span class="skill__level">Medium</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">MongoDB</h3>
-                                <span class="skill__level">Medium</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">AWS</h3>
-                                <span class="skill__level">Beginner</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">Linux</h3>
-                                <span class="skill__level">Medium</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">WSL</h3>
-                                <span class="skill__level">Medium</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">Git</h3>
-                                <span class="skill__level">Advanced</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-overflow overflow-2"></div>
-                </div>
-
-                <div class="skill__card">
-                    <div class="card-overflow overflow-1"></div>
-
-                    <div class="skill__card__title">Front-end</div>
-
-                    <div class="skill__card__abilities">
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">HTML</h3>
-                                <span class="skill__level">Advanced</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">CSS</h3>
-                                <span class="skill__level">Advanced</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">Javascript</h3>
-                                <span class="skill__level">Advanced</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">Typescript</h3>
-                                <span class="skill__level">Advanced</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">React</h3>
-                                <span class="skill__level">Advanced</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">React Native</h3>
-                                <span class="skill__level">Advanced</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">Angular</h3>
-                                <span class="skill__level">Medium</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <i class="ri-check-double-line skill__icon"></i>
-
-                            <div class="skill__card__data">
-                                <h3 class="skill__name">Ionic</h3>
-                                <span class="skill__level">Medium</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-overflow overflow-2"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="projects section container" id="projects">
-            <div class="section__titles">
-                <h3 class="section__subtitle">More experience</h3>
-                <h2 class="section__title">Projects</h2>
-            </div>
-
-            <div class="projects__container">
-                <div class="project">
-                    <img
-                        src="./assets/images/python-project-thumb-1.png"
-                        alt="hand-recognition"
-                        class="project__image"
-                    />
-
-                    <div class="project__data">
-                        <div>
-                            <h2 class="project__title">Hand Detector</h2>
-
-                            <p class="project__description">
-                                The hand detector using Python is a project that I created to study Python programming with bests practices. It was finished in about 2 weeks and has 3 modes of detector: the counter, volume controller and object moving mode.
-                            </p>
-                        </div>
-
-                        <div class="project__links">
-                            <a href="https://github.com/NEVI0/hand-recognition" target="_blank" class="icon__button">
-                                <i class="ri-github-line icon__button-icon"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/posts/n%C3%A9vio-magagnin-045710177_python-programming-software-activity-6864335079620018176-Xtld" target="_blank" class="icon__button">
-                                <i class="ri-linkedin-box-line icon__button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project project-reverse">
-                    <img
-                        src="./assets/images/python-project-thumb-2.png"
-                        alt="hand-recognition"
-                        class="project__image"
-                    />
-
-                    <div class="project__data">
-                        <div>
-                            <h2 class="project__title">Snake Game</h2>
-
-                            <p class="project__description">
-                                Another Python project to learn much more about Python programming, POO with Python and of course, to have fun while testing it!
-                            </p>
-                        </div>
-
-                        <div class="project__links">
-                            <a href="https://github.com/NEVI0/Snake-Game-Python" target="_blank" class="icon__button">
-                                <i class="ri-github-line icon__button-icon"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/posts/n%C3%A9vio-magagnin-045710177_python-gamedeveloper-pythontraining-activity-6738945546129547264-zy0q" target="_blank" class="icon__button">
-                                <i class="ri-linkedin-box-line icon__button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <img
-                        src="./assets/images/rn-project-thumb-3.png"
-                        alt="hand-recognition"
-                        class="project__image"
-                    />
-
-                    <div class="project__data">
-                        <div>
-                            <h2 class="project__title">User Interface Prototype</h2>
-
-                            <p class="project__description">
-                                This UI was created by me using React Native to improve my front-end skills in styling interfaces. I used styled-components to style it and reusable components in the screens.
-                            </p>
-                        </div>
-
-                        <div class="project__links">
-                            <a href="https://github.com/NEVI0/react-native-ui-prototype" target="_blank" class="icon__button">
-                                <i class="ri-github-line icon__button-icon"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/posts/n%C3%A9vio-magagnin-045710177_reactnative-react-ui-activity-6834526150740467712-KWZd" target="_blank" class="icon__button">
-                                <i class="ri-linkedin-box-line icon__button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project project-reverse">
-                    <img
-                        src="./assets/images/via-notes-project-thumb.png"
-                        alt="hand-recognition"
-                        class="project__image"
-                    />
-
-                    <div class="project__data">
-                        <div>
-                            <h2 class="project__title">Via Notes</h2>
-
-                            <p class="project__description">
-                                This project is a full-stack test that Vialaser company passed to me in order to get a front-end job in the company. I had one week to complete it, but I actually finished in four days only programming at night.
-                            </p>
-                        </div>
-
-                        <div class="project__links">
-                            <a href="https://github.com/NEVI0/via-notes-frontend" target="_blank" class="icon__button">
-                                <i class="ri-github-line icon__button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact section container" id="contact">
-            <div class="section__titles">
-                <h3 class="section__subtitle">Reach me</h3>
-                <h2 class="section__title">Contacts</h2>
-            </div>
-
-            <div class="contact__container grid">
-                <a href="https://www.linkedin.com/in/n%C3%A9vio-magagnin-045710177/" target="_blank" class="contact__card">
-                    <div class="card-overflow overflow-1"></div>
-
-                    <i class="ri-linkedin-box-line contact__card-icon"></i>
-                    <h3 class="contact__title">LinkedIn</h3>
-                    <span class="contact__data">Névio Costa Magagnin</span>
-
-                    <div class="card-overflow overflow-2"></div>
-                </a>
-
-                <a href="mailto:neviocostamagagnin@gmail.com" target="_blank" class="contact__card">
-                    <div class="card-overflow overflow-1"></div>
-
-                    <i class="ri-mail-send-line contact__card-icon"></i>
-                    <h3 class="contact__title">E-mail</h3>
-                    <span class="contact__data">neviocostamagagnin@gmail.com</span>
-
-                    <div class="card-overflow overflow-2"></div>
-                </a>
-
-                <a href="https://www.instagram.com/nevio_costa/" target="_blank" class="contact__card">
-                    <div class="card-overflow overflow-1"></div>
-
-                    <i class="ri-instagram-line contact__card-icon"></i>
-                    <h3 class="contact__title">Instagram</h3>
-                    <span class="contact__data">@nevio_costa</span>
-
-                    <div class="card-overflow overflow-2"></div>
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=5548996388761" target="_blank" class="contact__card">
-                    <div class="card-overflow overflow-1"></div>
-
-                    <i class="ri-whatsapp-line contact__card-icon"></i>
-                    <h3 class="contact__title">Whatsapp</h3>
-                    <span class="contact__data">+55 48 99638-8761</span>
-
-                    <div class="card-overflow overflow-2"></div>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <button class="icon__button scrollup" id="scroll-up">
-        <i class="ri-arrow-up-line icon__button-icon"></i>
-    </button>
-
-    <footer class="footer">
-        <h1 class="footer__title">
-            Névio C. Magagnin
-        </h1>
-
-        <div class="footer__links footer__row">
-            <a href="#about" class="footer__link">About</a>
-            <a href="#skills" class="footer__link">Skills</a>
-            <a href="#projects" class="footer__link">Projects</a>
+        </header>
+
+        <div class="divider">
+            <div class="divider__line"></div>
+            <span class="divider__title">links</span>
+            <div class="divider__line"></div>
         </div>
 
-        <div class="footer__social footer__row">
-            <a href="mailto:neviocostamagagnin@gmail.com" target="_blank" class="social__link">
-                <i class="ri-mail-send-line social__icon"></i>
-            </a>
+        <main class="links">
+            <a href="#" class="link link-instagram">Instagram</a>
+            <a href="#" class="link link-linkedin">LinkedIn</a>
+            <a href="#" class="link link-whatsapp">WhatsApp</a>
+            <a href="#" class="link link-email">E-mail</a>
+            <a href="#" class="link link-github">GitHub</a>
+            <a href="#" class="link link-figma">Figma</a>
+            <a href="#" class="link link-meetcompass">Meet Compass</a>
+        </main>
 
-            <a href="https://api.whatsapp.com/send?phone=5548996388761" target="_blank" class="social__link">
-                <i class="ri-whatsapp-line social__icon"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/n%C3%A9vio-magagnin-045710177/" target="_blank" class="social__link">
-                <i class="ri-linkedin-box-line social__icon"></i>
-            </a>
-
-            <a href="https://www.instagram.com/nevio_costa/" target="_blank" class="social__link">
-                <i class="ri-instagram-line social__icon"></i>
-            </a>
-        </div>
-
-        <p class="footer__copy">
-            &copy; Névio Costa Magagnin. All rights reserved
-        </p>
-    </footer>
-    
-    <script src="./assets/js/scrollreveal.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+        <footer class="footer">
+            <small class="copyright">
+                Copyright Névio Costa Magagnin | All right reserveds
+            </small>
+        </footer>
+    </div>
 </body>
 </html>
