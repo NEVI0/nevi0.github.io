@@ -1,5 +1,5 @@
 :root {
-    --body-color: #D6F6E1;
+    --body-color: #e8f7ed;
     --container-color: #9D9D9D;
     --text-color: #040905;
     --text-light-color: #727272
@@ -15,6 +15,7 @@
 body {
     color: var(--text-color);
     background-color: var(--body-color);
+    position: relative;
 }
 
 .main {
@@ -69,6 +70,7 @@ body {
 
 .divider__title {
     font-size: .75rem;
+    font-weight: 500;
     color: var(--container-color);
 }
 
@@ -114,15 +116,11 @@ body {
 }
 
 .link-github {
-    background-color: #ed0df5;    
-}
-
-.link-figma {
     background-color: #f0ec1e;    
 }
 
 .link-meetcompass {
-    background-color: #5926f2;    
+    background-color: #764cf5;    
 }
 
 .footer {
@@ -133,4 +131,14 @@ body {
 .copyright {
     font-size: .75rem;
     color: var(--container-color);
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        width: 600px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 4rem 2rem;
+    }
 }
