@@ -1,8 +1,8 @@
 :root {
-    --body-color: #181a1d;
-    --container-color: #000000;
-    --text-color: #ffffff;
-    --text-light-color: #dee2f3;
+    --body-color: #ffffff;
+    --container-color: #0b0b0c;
+    --text-color: #0b0b0c;
+    --text-light-color: #8e92a7;
 }
 
 * {
@@ -61,6 +61,7 @@ body {
     height: 100vh;
     position: relative;
     z-index: 5;
+
 }
 
 .header {
@@ -136,28 +137,15 @@ body {
 }
 
 .link-email {
-    background-color: #FC9015;
+    background-color: #15fc20;
 }
 
 .link-github {
-    background-color: #F0EC1E;    
-}
-
-.link-suppmessenger {
     background-color: #764cf5;    
-}
-
-.link-resume-1 {
-    background-color: #FF3535;    
-}
-
-.link-resume-2 {
-    background-color: #6eff35;    
 }
 
 .footer {
     text-align: center;
-    padding-bottom: 2rem;
 }
 
 .copyright {
@@ -181,10 +169,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-    .offset {
-        opacity: 1;
-    }
-
     .main {
         width: 600px;
         position: absolute;
